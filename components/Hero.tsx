@@ -1,20 +1,59 @@
 'use client'
 
 import { useState } from 'react'
-import { Rocket, Instagram, Twitter, Facebook, Music } from 'lucide-react'
+import {
+  Rocket,
+  Instagram,
+  Twitter,
+  Facebook,
+  Music,
+  type LucideIcon,
+} from 'lucide-react'
 import { useLanguage } from '@/lib/LanguageContext'
 
 const PLATFORMS = [
-  { id: 'instagram', Icon: Instagram, color: 'text-pink-600', bg: 'bg-pink-50', border: 'border-pink-200 shadow-pink-100' },
-  { id: 'twitter', Icon: Twitter, color: 'text-gray-900', bg: 'bg-gray-50', border: 'border-gray-300 shadow-gray-100' },
-  { id: 'facebook', Icon: Facebook, color: 'text-blue-600', bg: 'bg-blue-50', border: 'border-blue-200 shadow-blue-100' },
-  { id: 'tiktok', Icon: Music, color: 'text-gray-900', bg: 'bg-gray-100', border: 'border-gray-900 shadow-gray-200' },
-]
+  {
+    id: 'instagram',
+    Icon: Instagram,
+    color: 'text-pink-600',
+    bg: 'bg-pink-50',
+    border: 'border-pink-200 shadow-pink-100',
+  },
+  {
+    id: 'twitter',
+    Icon: Twitter,
+    color: 'text-gray-900',
+    bg: 'bg-gray-50',
+    border: 'border-gray-300 shadow-gray-100',
+  },
+  {
+    id: 'facebook',
+    Icon: Facebook,
+    color: 'text-blue-600',
+    bg: 'bg-blue-50',
+    border: 'border-blue-200 shadow-blue-100',
+  },
+  {
+    id: 'tiktok',
+    Icon: Music,
+    color: 'text-gray-900',
+    bg: 'bg-gray-100',
+    border: 'border-gray-900 shadow-gray-200',
+  },
+] as const satisfies ReadonlyArray<{
+  id: string
+  Icon: LucideIcon
+  color: string
+  bg: string
+  border: string
+}>
+
+type PlatformId = (typeof PLATFORMS)[number]['id']
 
 export default function Hero() {
   const { t } = useLanguage()
   const h = t.hero
-  const [selected, setSelected] = useState('instagram')
+  const [selected, setSelected] = useState<PlatformId>('instagram')
 
   return (
     <section className="bg-white py-20 px-4">
@@ -55,15 +94,21 @@ export default function Hero() {
               key={id}
               onClick={() => setSelected(id)}
               className={`flex flex-col items-center gap-3 p-6 rounded-2xl border-2 transition-all group ${
-                selected === id 
-                  ? `${bg} ${border} scale-105 shadow-lg` 
+                selected === id
+                  ? `${bg} ${border} scale-105 shadow-lg`
                   : 'bg-white border-transparent hover:border-gray-100 hover:bg-gray-50'
               }`}
             >
-              <div className={`w-12 h-12 rounded-xl ${bg} flex items-center justify-center transition-transform group-hover:scale-110`}>
+              <div
+                className={`w-12 h-12 rounded-xl ${bg} flex items-center justify-center transition-transform group-hover:scale-110`}
+              >
                 <Icon size={24} className={color} strokeWidth={2} />
               </div>
-              <span className={`font-bold text-sm ${selected === id ? 'text-gray-900' : 'text-gray-500'}`}>
+              <span
+                className={`font-bold text-sm ${
+                  selected === id ? 'text-gray-900' : 'text-gray-500'
+                }`}
+              >
                 {h.platforms[i]}
               </span>
             </button>

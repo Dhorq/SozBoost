@@ -47,14 +47,17 @@ export default function Footer() {
 
           {/* Platform Links */}
           <div>
-            <div className="font-semibold text-gray-900 mb-4 text-sm">{f.platformTitle}</div>
+            <div className="font-semibold text-gray-900 mb-4 text-sm">
+              {f.platformTitle}
+            </div>
             <div className="space-y-2.5">
               {f.platform.map((item, i) => {
-                const hrefs = ['#', '#', '#harga', '#']
+                const hrefs = ['#', '#', '#harga', '#'] as const
+                const href = hrefs[i] ?? '#'
                 return (
                   <Link
                     key={i}
-                    href={hrefs[i]}
+                    href={href}
                     className="block text-gray-500 text-sm hover:text-gray-900 transition-colors"
                   >
                     {item}
@@ -66,7 +69,9 @@ export default function Footer() {
 
           {/* Help Links */}
           <div>
-            <div className="font-semibold text-gray-900 mb-4 text-sm">{f.helpTitle}</div>
+            <div className="font-semibold text-gray-900 mb-4 text-sm">
+              {f.helpTitle}
+            </div>
             <div className="space-y-2.5">
               {f.help.map((item, i) => (
                 <Link
@@ -84,7 +89,9 @@ export default function Footer() {
         <div className="border-t border-gray-100 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-gray-400 text-sm">{f.copyright}</p>
           <p className="text-gray-400 text-sm flex items-center gap-1.5">
-            Made with <Heart size={13} className="text-[#C9A96E]" fill="#C9A96E" /> {f.madeFor}
+            Made with{' '}
+            <Heart size={13} className="text-[#C9A96E]" fill="#C9A96E" />{' '}
+            {f.madeFor}
           </p>
         </div>
       </div>

@@ -14,9 +14,7 @@ export default function Pricing() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             {p.title}
           </h2>
-          <p className="text-gray-500 text-lg max-w-xl mx-auto">
-            {p.sub}
-          </p>
+          <p className="text-gray-500 text-lg max-w-xl mx-auto">{p.sub}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
@@ -35,10 +33,14 @@ export default function Pricing() {
                 </div>
               )}
 
-              <div className="font-bold text-gray-900 text-lg mb-1">{plan.name}</div>
+              <div className="font-bold text-gray-900 text-lg mb-1">
+                {plan.name}
+              </div>
 
               <div className="flex items-baseline gap-1 mb-1">
-                <span className="text-3xl font-bold text-gray-900">{plan.price}</span>
+                <span className="text-3xl font-bold text-gray-900">
+                  {plan.price}
+                </span>
                 {plan.period && (
                   <span className="text-gray-500 text-sm">{plan.period}</span>
                 )}
@@ -57,10 +59,17 @@ export default function Pricing() {
               </button>
 
               <div className="space-y-3">
-                {plan.features.map((f, j) => (
-                  <div key={j} className="flex items-start gap-2 text-sm text-gray-600">
-                    <Check size={15} className="text-[#C9A96E] mt-0.5 flex-shrink-0" strokeWidth={2.5} />
-                    {f}
+                {plan.features.map((feature, j) => (
+                  <div
+                    key={j}
+                    className="flex items-start gap-2 text-sm text-gray-600"
+                  >
+                    <Check
+                      size={15}
+                      className="text-[#C9A96E] mt-0.5 flex-shrink-0"
+                      strokeWidth={2.5}
+                    />
+                    {feature}
                   </div>
                 ))}
               </div>
@@ -68,9 +77,7 @@ export default function Pricing() {
           ))}
         </div>
 
-        <p className="text-center text-gray-400 text-sm mt-8">
-          {p.feeNote}
-        </p>
+        <p className="text-center text-gray-400 text-sm mt-8">{p.feeNote}</p>
       </div>
     </section>
   )

@@ -12,9 +12,7 @@ export default function CTA() {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
           {c.title}
         </h2>
-        <p className="text-white/80 text-lg mb-10 max-w-xl mx-auto">
-          {c.sub}
-        </p>
+        <p className="text-white/80 text-lg mb-10 max-w-xl mx-auto">{c.sub}</p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button className="bg-white text-[#C9A96E] font-semibold px-8 py-3.5 rounded-xl hover:bg-gray-50 transition-colors w-full sm:w-auto">
             {c.ctaBrand}

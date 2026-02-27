@@ -65,20 +65,56 @@ export const translations = {
       creatorTitle: 'Untuk Content Creator',
       creatorSub: 'Monetize konten kamu',
       brand: [
-        { title: 'Filter Creator Akurat', desc: 'Cari berdasarkan niche, platform, followers, engagement rate, dan budget yang sesuai.' },
-        { title: 'Pembayaran Aman (Escrow)', desc: 'Dana ditahan platform terlebih dahulu, baru cair setelah konten diapprove.' },
-        { title: 'Analytics & Laporan', desc: 'Pantau performa konten: reach, engagement, klik, dan estimasi ROI kampanye.' },
-        { title: 'Chat In-App', desc: 'Komunikasi langsung dengan creator tanpa perlu keluar platform.' },
-        { title: 'Review & Rating', desc: 'Beri penilaian setelah project selesai untuk membantu brand lain memilih.' },
-        { title: 'Repeat Order Mudah', desc: 'Atur langganan bulanan dengan creator favorit kamu.' },
+        {
+          title: 'Filter Creator Akurat',
+          desc: 'Cari berdasarkan niche, platform, followers, engagement rate, dan budget yang sesuai.',
+        },
+        {
+          title: 'Pembayaran Aman (Escrow)',
+          desc: 'Dana ditahan platform terlebih dahulu, baru cair setelah konten diapprove.',
+        },
+        {
+          title: 'Analytics & Laporan',
+          desc: 'Pantau performa konten: reach, engagement, klik, dan estimasi ROI kampanye.',
+        },
+        {
+          title: 'Chat In-App',
+          desc: 'Komunikasi langsung dengan creator tanpa perlu keluar platform.',
+        },
+        {
+          title: 'Review & Rating',
+          desc: 'Beri penilaian setelah project selesai untuk membantu brand lain memilih.',
+        },
+        {
+          title: 'Repeat Order Mudah',
+          desc: 'Atur langganan bulanan dengan creator favorit kamu.',
+        },
       ],
       creator: [
-        { title: 'Set Paket & Harga Sendiri', desc: 'Tentukan rate card dan jenis konten yang kamu tawarkan kepada brand.' },
-        { title: 'Pembayaran Terjamin', desc: 'Tidak perlu khawatir tidak dibayar — escrow menjamin semua transaksi.' },
-        { title: 'Bangun Reputasi', desc: 'Rating dan review membantu kamu mendapatkan lebih banyak klien.' },
-        { title: 'Manajemen Order', desc: 'Tracking semua project aktif dalam satu dashboard yang mudah dipahami.' },
-        { title: 'Akses ke Ratusan Brand', desc: 'Terhubung dengan UMKM dan brand yang aktif mencari creator seperti kamu.' },
-        { title: 'Statistik Portofolio', desc: 'Tampilkan engagement rate dan performa konten ke calon klien.' },
+        {
+          title: 'Set Paket & Harga Sendiri',
+          desc: 'Tentukan rate card dan jenis konten yang kamu tawarkan kepada brand.',
+        },
+        {
+          title: 'Pembayaran Terjamin',
+          desc: 'Tidak perlu khawatir tidak dibayar — escrow menjamin semua transaksi.',
+        },
+        {
+          title: 'Bangun Reputasi',
+          desc: 'Rating dan review membantu kamu mendapatkan lebih banyak klien.',
+        },
+        {
+          title: 'Manajemen Order',
+          desc: 'Tracking semua project aktif dalam satu dashboard yang mudah dipahami.',
+        },
+        {
+          title: 'Akses ke Ratusan Brand',
+          desc: 'Terhubung dengan UMKM dan brand yang aktif mencari creator seperti kamu.',
+        },
+        {
+          title: 'Statistik Portofolio',
+          desc: 'Tampilkan engagement rate dan performa konten ke calon klien.',
+        },
       ],
     },
 
@@ -102,7 +138,13 @@ export const translations = {
           price: 'Rp 299K',
           period: '/bulan',
           desc: 'Untuk UMKM yang aktif berkampanye',
-          features: ['Unlimited campaign', 'Priority matching creator', 'Analytics lengkap', 'Dedicated support', 'Featured di halaman brand'],
+          features: [
+            'Unlimited campaign',
+            'Priority matching creator',
+            'Analytics lengkap',
+            'Dedicated support',
+            'Featured di halaman brand',
+          ],
           cta: 'Coba 14 Hari Gratis',
           highlight: true,
         },
@@ -111,7 +153,13 @@ export const translations = {
           price: 'Custom',
           period: '',
           desc: 'Untuk korporat & agency',
-          features: ['Campaign tak terbatas', 'Multi-user access', 'API integration', 'Account manager dedikasi', 'Custom contract'],
+          features: [
+            'Campaign tak terbatas',
+            'Multi-user access',
+            'API integration',
+            'Account manager dedikasi',
+            'Custom contract',
+          ],
           cta: 'Hubungi Sales',
           highlight: false,
         },
@@ -204,20 +252,56 @@ export const translations = {
       creatorTitle: 'For Content Creators',
       creatorSub: 'Monetize your content',
       brand: [
-        { title: 'Accurate Creator Filter', desc: 'Search by niche, platform, followers, engagement rate, and budget.' },
-        { title: 'Secure Payment (Escrow)', desc: 'Funds are held by the platform first, released only after content approval.' },
-        { title: 'Analytics & Reports', desc: 'Track content performance: reach, engagement, clicks, and estimated ROI.' },
-        { title: 'In-App Chat', desc: 'Communicate directly with creators without leaving the platform.' },
-        { title: 'Review & Rating', desc: 'Rate creators after project completion to help other brands choose.' },
-        { title: 'Easy Repeat Orders', desc: 'Set up monthly subscriptions with your favorite creators.' },
+        {
+          title: 'Accurate Creator Filter',
+          desc: 'Search by niche, platform, followers, engagement rate, and budget.',
+        },
+        {
+          title: 'Secure Payment (Escrow)',
+          desc: 'Funds are held by the platform first, released only after content approval.',
+        },
+        {
+          title: 'Analytics & Reports',
+          desc: 'Track content performance: reach, engagement, clicks, and estimated ROI.',
+        },
+        {
+          title: 'In-App Chat',
+          desc: 'Communicate directly with creators without leaving the platform.',
+        },
+        {
+          title: 'Review & Rating',
+          desc: 'Rate creators after project completion to help other brands choose.',
+        },
+        {
+          title: 'Easy Repeat Orders',
+          desc: 'Set up monthly subscriptions with your favorite creators.',
+        },
       ],
       creator: [
-        { title: 'Set Your Own Packages & Rates', desc: 'Define your rate card and the types of content you offer to brands.' },
-        { title: 'Guaranteed Payment', desc: "No worries about not getting paid — escrow secures every transaction." },
-        { title: 'Build Your Reputation', desc: 'Ratings and reviews help you attract more clients.' },
-        { title: 'Order Management', desc: 'Track all active projects in one easy-to-use dashboard.' },
-        { title: 'Access to Hundreds of Brands', desc: 'Connect with SMEs and brands actively looking for creators like you.' },
-        { title: 'Portfolio Statistics', desc: 'Show engagement rate and content performance to potential clients.' },
+        {
+          title: 'Set Your Own Packages & Rates',
+          desc: 'Define your rate card and the types of content you offer to brands.',
+        },
+        {
+          title: 'Guaranteed Payment',
+          desc: "No worries about not getting paid — escrow secures every transaction.",
+        },
+        {
+          title: 'Build Your Reputation',
+          desc: 'Ratings and reviews help you attract more clients.',
+        },
+        {
+          title: 'Order Management',
+          desc: 'Track all active projects in one easy-to-use dashboard.',
+        },
+        {
+          title: 'Access to Hundreds of Brands',
+          desc: 'Connect with SMEs and brands actively looking for creators like you.',
+        },
+        {
+          title: 'Portfolio Statistics',
+          desc: 'Show engagement rate and content performance to potential clients.',
+        },
       ],
     },
 
@@ -241,7 +325,13 @@ export const translations = {
           price: 'Rp 299K',
           period: '/month',
           desc: 'For SMEs running active campaigns',
-          features: ['Unlimited campaigns', 'Priority creator matching', 'Full analytics', 'Dedicated support', 'Featured on brand page'],
+          features: [
+            'Unlimited campaigns',
+            'Priority creator matching',
+            'Full analytics',
+            'Dedicated support',
+            'Featured on brand page',
+          ],
           cta: 'Try 14 Days Free',
           highlight: true,
         },
@@ -250,7 +340,13 @@ export const translations = {
           price: 'Custom',
           period: '',
           desc: 'For corporations & agencies',
-          features: ['Unlimited campaigns', 'Multi-user access', 'API integration', 'Dedicated account manager', 'Custom contract'],
+          features: [
+            'Unlimited campaigns',
+            'Multi-user access',
+            'API integration',
+            'Dedicated account manager',
+            'Custom contract',
+          ],
           cta: 'Contact Sales',
           highlight: false,
         },
@@ -276,4 +372,8 @@ export const translations = {
       madeFor: 'for Indonesia',
     },
   },
-}
+} as const
+
+export type Language = keyof typeof translations
+export type Translation = (typeof translations)[Language]
+

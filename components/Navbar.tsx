@@ -23,27 +23,44 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="#cara-kerja" className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors">
+            <Link
+              href="#cara-kerja"
+              className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors"
+            >
               {t.nav.howItWorks}
             </Link>
-            <Link href="#fitur" className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors">
+            <Link
+              href="#fitur"
+              className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors"
+            >
               {t.nav.features}
             </Link>
-            <Link href="#harga" className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors">
+            <Link
+              href="#harga"
+              className="text-gray-600 hover:text-gray-900 text-sm font-medium transition-colors"
+            >
               {t.nav.pricing}
             </Link>
-             {/* Language Switcher */}
+            {/* Language Switcher */}
             <div className="flex items-center rounded-lg border border-gray-200 overflow-hidden text-xs font-bold">
               <button
                 onClick={() => setLanguage('id')}
-                className={`px-2.5 py-1.5 transition-colors ${lang === 'id' ? 'bg-[#C9A96E] text-white' : 'text-gray-400 hover:text-gray-700'}`}
+                className={`px-2.5 py-1.5 transition-colors ${
+                  lang === 'id'
+                    ? 'bg-[#C9A96E] text-white'
+                    : 'text-gray-400 hover:text-gray-700'
+                }`}
               >
                 ID
               </button>
               <div className="w-px h-4 bg-gray-200" />
               <button
                 onClick={() => setLanguage('en')}
-                className={`px-2.5 py-1.5 transition-colors ${lang === 'en' ? 'bg-[#C9A96E] text-white' : 'text-gray-400 hover:text-gray-700'}`}
+                className={`px-2.5 py-1.5 transition-colors ${
+                  lang === 'en'
+                    ? 'bg-[#C9A96E] text-white'
+                    : 'text-gray-400 hover:text-gray-700'
+                }`}
               >
                 EN
               </button>
@@ -52,7 +69,6 @@ export default function Navbar() {
 
           {/* Desktop Right: Language Switcher + CTA */}
           <div className="hidden md:flex items-center gap-3">
-          
             <button className="text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors">
               {t.nav.login}
             </button>
@@ -67,9 +83,21 @@ export default function Navbar() {
             className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
             aria-label="Toggle menu"
           >
-            <div className={`w-5 h-0.5 bg-gray-600 mb-1 transition-all ${mobileOpen ? 'rotate-45 translate-y-1.5' : ''}`}></div>
-            <div className={`w-5 h-0.5 bg-gray-600 mb-1 transition-all ${mobileOpen ? 'opacity-0' : ''}`}></div>
-            <div className={`w-5 h-0.5 bg-gray-600 transition-all ${mobileOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></div>
+            <div
+              className={`w-5 h-0.5 bg-gray-600 mb-1 transition-all ${
+                mobileOpen ? 'rotate-45 translate-y-1.5' : ''
+              }`}
+            ></div>
+            <div
+              className={`w-5 h-0.5 bg-gray-600 mb-1 transition-all ${
+                mobileOpen ? 'opacity-0' : ''
+              }`}
+            ></div>
+            <div
+              className={`w-5 h-0.5 bg-gray-600 transition-all ${
+                mobileOpen ? '-rotate-45 -translate-y-1.5' : ''
+              }`}
+            ></div>
           </button>
         </div>
 
@@ -77,30 +105,52 @@ export default function Navbar() {
         {mobileOpen && (
           <div className="md:hidden border-t border-gray-100 py-4">
             <div className="flex flex-col gap-2">
-              <Link href="#cara-kerja" onClick={() => setMobileOpen(false)} className="text-gray-600 text-sm font-medium py-2 px-2 rounded-lg hover:bg-gray-50">
+              <Link
+                href="#cara-kerja"
+                onClick={() => setMobileOpen(false)}
+                className="text-gray-600 text-sm font-medium py-2 px-2 rounded-lg hover:bg-gray-50"
+              >
                 {t.nav.howItWorks}
               </Link>
-              <Link href="#fitur" onClick={() => setMobileOpen(false)} className="text-gray-600 text-sm font-medium py-2 px-2 rounded-lg hover:bg-gray-50">
+              <Link
+                href="#fitur"
+                onClick={() => setMobileOpen(false)}
+                className="text-gray-600 text-sm font-medium py-2 px-2 rounded-lg hover:bg-gray-50"
+              >
                 {t.nav.features}
               </Link>
-              <Link href="#harga" onClick={() => setMobileOpen(false)} className="text-gray-600 text-sm font-medium py-2 px-2 rounded-lg hover:bg-gray-50">
+              <Link
+                href="#harga"
+                onClick={() => setMobileOpen(false)}
+                className="text-gray-600 text-sm font-medium py-2 px-2 rounded-lg hover:bg-gray-50"
+              >
                 {t.nav.pricing}
               </Link>
 
               {/* Mobile Language Switcher */}
               <div className="flex items-center gap-2 px-2 py-1">
-                <span className="text-xs text-gray-500 font-medium">Bahasa:</span>
+                <span className="text-xs text-gray-500 font-medium">
+                  Bahasa:
+                </span>
                 <div className="flex items-center rounded-lg border border-gray-200 overflow-hidden text-xs font-bold">
                   <button
                     onClick={() => setLanguage('id')}
-                    className={`px-3 py-1.5 transition-colors ${lang === 'id' ? 'bg-[#C9A96E] text-white' : 'text-gray-400 hover:text-gray-700'}`}
+                    className={`px-3 py-1.5 transition-colors ${
+                      lang === 'id'
+                        ? 'bg-[#C9A96E] text-white'
+                        : 'text-gray-400 hover:text-gray-700'
+                    }`}
                   >
                     ID
                   </button>
                   <div className="w-px h-4 bg-gray-200" />
                   <button
                     onClick={() => setLanguage('en')}
-                    className={`px-3 py-1.5 transition-colors ${lang === 'en' ? 'bg-[#C9A96E] text-white' : 'text-gray-400 hover:text-gray-700'}`}
+                    className={`px-3 py-1.5 transition-colors ${
+                      lang === 'en'
+                        ? 'bg-[#C9A96E] text-white'
+                        : 'text-gray-400 hover:text-gray-700'
+                    }`}
                   >
                     EN
                   </button>
@@ -122,3 +172,4 @@ export default function Navbar() {
     </nav>
   )
 }
+
