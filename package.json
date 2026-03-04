@@ -9,14 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.4.2",
+    "bcryptjs": "^3.0.3",
     "lucide-react": "^0.575.0",
     "next": "^16.1.6",
+    "next-auth": "^5.0.0-beta.30",
+    "pg": "^8.19.0",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@prisma/client": "^7.4.2",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^22.13.4",
+    "@types/pg": "^8.18.0",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "autoprefixer": "^10.0.1",

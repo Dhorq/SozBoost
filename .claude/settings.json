@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(node -e:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run build:*)",
+      "Bash(npx prisma generate:*)",
+      "Bash(ls:*)",
+      "Bash(cmd /c \"cd /d d:\\\\SozBoost && npx prisma generate\")",
+      "Bash(cmd /c \"cd /d d:\\\\SozBoost && npx prisma generate 2>&1\")",
+      "Bash(powershell -Command:*)",
+      "Bash(\"/c/Program Files/nodejs/npx\" prisma generate)",
+      "Read(//c/Program Files/nodejs//**)",
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "Bash(node --version:*)"
+    ],
+    "additionalDirectories": [
+      "D:\\SozBoost\\app\\api\\auth"
+    ]
+  }
+}

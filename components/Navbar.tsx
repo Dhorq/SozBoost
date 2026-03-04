@@ -69,12 +69,12 @@ export default function Navbar() {
 
           {/* Desktop Right: Language Switcher + CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <button className="text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors">
+            <Link href="/login" className="text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors">
               {t.nav.login}
-            </button>
-            <button className="bg-[#C9A96E] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#B8925C] transition-colors">
+            </Link>
+            <Link href="/register" className="bg-[#C9A96E] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-[#B8925C] transition-colors">
               {t.nav.signUp}
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -158,12 +158,20 @@ export default function Navbar() {
               </div>
 
               <div className="pt-1 flex gap-3">
-                <button className="text-sm font-medium text-gray-700 border border-gray-200 px-4 py-2.5 rounded-lg w-full hover:bg-gray-50 transition-colors">
+                <Link
+                  href="/login"
+                  onClick={() => setMobileOpen(false)}
+                  className="text-sm font-medium text-gray-700 border border-gray-200 px-4 py-2.5 rounded-lg w-full hover:bg-gray-50 transition-colors text-center"
+                >
                   {t.nav.login}
-                </button>
-                <button className="bg-[#C9A96E] text-white text-sm font-semibold px-4 py-2.5 rounded-lg w-full hover:bg-[#B8925C] transition-colors">
+                </Link>
+                <Link
+                  href="/register"
+                  onClick={() => setMobileOpen(false)}
+                  className="bg-[#C9A96E] text-white text-sm font-semibold px-4 py-2.5 rounded-lg w-full hover:bg-[#B8925C] transition-colors text-center"
+                >
                   {t.nav.signUp}
-                </button>
+                </Link>
               </div>
             </div>
           </div>
